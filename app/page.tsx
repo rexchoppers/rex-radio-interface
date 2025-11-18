@@ -9,7 +9,6 @@ export default function Home() {
   const [error, setError] = useState('');
 
   const validateHmacKey = (key: string): boolean => {
-    // Basic validation: check if key is not empty and has reasonable length
     if (!key || key.trim().length === 0) {
       setError('HMAC Key is required');
       return false;
